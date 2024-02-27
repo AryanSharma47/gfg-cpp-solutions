@@ -10,7 +10,6 @@ class Solution
     void merge(long long arr[],long long l,long long mid,long long r)
     {
         vector<long long> a;
-        
         long long i=l;
         long long j=mid+1;
         
@@ -18,10 +17,8 @@ class Solution
         {
             if(arr[i]<=arr[j])
             {
-                a.push_back(arr[i++]);
-               
+                a.push_back(arr[i++]);   
             }
-            
             else
             {
                 a.push_back(arr[j++]);
@@ -34,12 +31,10 @@ class Solution
             
         while(j<=r)
             a.push_back(arr[j++]);
-            
-            
+                   
         for(long long i=l;i<=r;i++)
             arr[i]=a[i-l];
-            
-           
+        
     }
     void mergeSort(long long arr[],long long l,long long r)
     {
@@ -57,5 +52,4 @@ class Solution
          mergeSort(arr,0,n-1);
          return c;
     }
-
 };
