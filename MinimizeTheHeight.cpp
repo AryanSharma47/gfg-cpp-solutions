@@ -1,3 +1,4 @@
+//Minimize the Heights II || Easy approach || Best for Beginners
 class Solution {
   public:
     int getMinDiff(int arr[], int n, int k) {
