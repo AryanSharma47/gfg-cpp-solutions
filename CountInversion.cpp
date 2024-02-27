@@ -22,7 +22,7 @@ class Solution
             else
             {
                 a.push_back(arr[j++]);
-                c+=(mid-i+1);
+                c+=(mid-i+1);         //number of remaining elements in the left subarray or total swaps
             }
         }
         
