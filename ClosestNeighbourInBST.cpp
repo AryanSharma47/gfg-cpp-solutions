@@ -36,8 +36,7 @@ class Solution {
        {
            ans=root->key;
            return;
-       }
-       
+       } 
        else if(root->key < n)
        {
            ans=root->key;
